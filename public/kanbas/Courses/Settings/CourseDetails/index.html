@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <a href="/kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a>
+                &nbsp&nbsp
+            </td>
+            <td>
+                <a href="#">Sections</a>
+                &nbsp&nbsp
+            </td>
+            <td>
+                <a href="/kanbas/Courses/Settings/NavigationTab/screen.html">Navigation</a>
+                &nbsp&nbsp
+            </td>
+            <td>
+                <a href="#">Apps</a>
+                &nbsp&nbsp
+            </td>
+            <td>
+                <a href="#">Feature Options</a>
+                &nbsp&nbsp
+            </td>
+            <td>
+                <a href="#">Integrations</a>
+            </td>
+        </tr>
+    </table>
+    <h1>Course Details</h1>
+    Image:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button>Choose Image</button>
+    <br/><br/>
+    Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCS 4550 12631 Web Development
+    SEC 01 Fall 2023 [BOS-1-TR]
+    <br/><br/>
+    Course Code:&nbsp&nbsp&nbsp&nbsp CS4550.12631.202410
+    <br/><br/>
+    Blueprint Course:&nbsp&nbspNo
+    <br/><br/>
+    Course Template:&nbsp&nbsp
+    <input type="checkbox" id="chkbox"/>
+    <label for="chkbox">Enable course as a Course Template</label><br/><br/>
+    Time Zone:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select><option>Eastern Time(US & Canada)(-05:00/-04:00)</option></select>
+    <br/><br/>
+    SIS ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    CS4550.12631.202410
+    <br/><br/>
+    Subaccount:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">CS Undergrad</a>
+    <br/><br/>
+    Term:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    202410_1 Fall 2023 Semester Full Term
+    <br/><br/>
+    Participation:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select><option>Term</option></select>
+    <br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCourse participation is limited to term start and end dates
+    <br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label for="start">Start</label><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="date" id="start"/><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label for="end">End</label><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="date" id="end"/><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="resStart"/>
+    <label for="resStart">Restrict students from viewing course before term start date</label><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="resEnd"/>
+    <label for="resEnd">Restrict students from viewing course after term end date</label><br/><br/>
+    Default due time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select><option>Account default (11:59pm)</option></select><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    This influences the user interface for setting due dates. It does not change the time due for any existing assignments.
+    <br/><br/>
+    Language:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select><option>Not set</option></select><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    This will override any user/syste, language preferences. This is only recommended for foreign language courses
+    <br/><br/>
+    File Storage:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10000 megabytes
+    <br/><br/>
+    Large Course:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="largeCourse"/>
+    <label for="largeCourse">Launch SpeedGrader Filtered by Student Group</label><br/><br/>
+    Grading Scheme:&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="gradingScheme"/>
+    <label for="gradingScheme">Enable course grading scheme</label><br/><br/>
+    License:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select><option>Private(Copyrighted)</option></select>
+    <br/><br/>
+    File Copyright:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="fileCopyright"/>
+    <label for="fileCopyright">Copyright and license information must be provided for files before
+        they are published
+    </label>
+    <br/><br/>
+    Visibility:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    If you need to make your course public please contact your administrator/support.<br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp
+    <select><option>Course</option></select><br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="visibility"/>
+    <label for="visibility">Include this course in the public course index</label>
+    <br/><br/>
+    Format:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select><option>On-Campus</option></select>
+    <br/><br/>
+    Mastery Path:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="masteryPaths"/>
+    <label for="masteryPaths">Enable individual learning paths for students based on assessment</label>
+    <br/><br/>
+    Description:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <textarea cols="60" rows="10"></textarea>
+    <br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <a href="#">more options</a>
+    <br/><br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button>Update Course Details</button>
+</body>
+</html>
