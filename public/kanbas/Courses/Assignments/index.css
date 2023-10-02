@@ -1,0 +1,12 @@
+.list-group-item-border-green {
+    border-left: 3px solid green;
+}
+
+.list-group .list-group-item {
+    border-radius: 0px;
+}
+.rounder-label {
+    padding: 5px;
+    border-radius: 16px;
+    border: 1px solid darkgray;
+}

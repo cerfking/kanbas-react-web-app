@@ -3,182 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../index.css">
+    <link rel="stylesheet" href="../../../KanbasNavigation/index.css">
+    <link rel="stylesheet" href="../../../../vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CourseNavigation/index.css">
+    <link rel="stylesheet" href="../../Home/index.css">
+    <link rel="stylesheet" href="../../Assignments/index.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li><a href="/kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="/kanbas/Dashboard/screen.html">Dashboard</a></li>
-                    <li><a href="/kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li><a href="/kanbas/Courses/Home/screen.html">Home</a></li>
-                    <li><a href="/kanbas/Courses/Modules/screen.html">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="/kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="/kanbas/Courses/Grades/screen.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>
-                            <a href="/kanbas/Courses/Settings/CourseDetails/screen.html">Course Details</a>
-                            &nbsp&nbsp
-                        </td>
-                        <td>
-                            <a href="#">Sections</a>
-                            &nbsp&nbsp
-                        </td>
-                        <td>
-                            <a href="/kanbas/Courses/Settings/NavigationTab/screen.html">Navigation</a>
-                            &nbsp&nbsp
-                        </td>
-                        <td>
-                            <a href="#">Apps</a>
-                            &nbsp&nbsp
-                        </td>
-                        <td>
-                            <a href="#">Feature Options</a>
-                            &nbsp&nbsp
-                        </td>
-                        <td>
-                            <a href="#">Integrations</a>
-                        </td>
-                    </tr>
-                </table>
-                <h1>Course Details</h1>
-                Image:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button>Choose Image</button>
-                <br/><br/>
-                Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCS 4550 12631 Web Development
-                SEC 01 Fall 2023 [BOS-1-TR]
-                <br/><br/>
-                Course Code:&nbsp&nbsp&nbsp&nbsp CS4550.12631.202410
-                <br/><br/>
-                Blueprint Course:&nbsp&nbspNo
-                <br/><br/>
-                Course Template:&nbsp&nbsp
-                <input type="checkbox" id="chkbox"/>
-                <label for="chkbox">Enable course as a Course Template</label><br/><br/>
-                Time Zone:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <select><option>Eastern Time(US & Canada)(-05:00/-04:00)</option></select>
-                <br/><br/>
-                SIS ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                CS4550.12631.202410
-                <br/><br/>
-                Subaccount:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">CS Undergrad</a>
-                <br/><br/>
-                Term:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                202410_1 Fall 2023 Semester Full Term
-                <br/><br/>
-                Participation:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select><option>Term</option></select>
-                <br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCourse participation is limited to term start and end dates
-                <br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <label for="start">Start</label><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="date" id="start"/><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <label for="end">End</label><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="date" id="end"/><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="checkbox" id="resStart"/>
-                <label for="resStart">Restrict students from viewing course before term start date</label><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="checkbox" id="resEnd"/>
-                <label for="resEnd">Restrict students from viewing course after term end date</label><br/><br/>
-                Default due time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select><option>Account default (11:59pm)</option></select><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                This influences the user interface for setting due dates. It does not change the time due for any existing assignments.
-                <br/><br/>
-                Language:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <select><option>Not set</option></select><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                This will override any user/syste, language preferences. This is only recommended for foreign language courses
-                <br/><br/>
-                File Storage:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10000 megabytes
-                <br/><br/>
-                Large Course:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="checkbox" id="largeCourse"/>
-                <label for="largeCourse">Launch SpeedGrader Filtered by Student Group</label><br/><br/>
-                Grading Scheme:&nbsp&nbsp&nbsp&nbsp
-                <input type="checkbox" id="gradingScheme"/>
-                <label for="gradingScheme">Enable course grading scheme</label><br/><br/>
-                License:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <select><option>Private(Copyrighted)</option></select>
-                <br/><br/>
-                File Copyright:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="checkbox" id="fileCopyright"/>
-                <label for="fileCopyright">Copyright and license information must be provided for files before
-                    they are published
-                </label>
-                <br/><br/>
-                Visibility:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                If you need to make your course public please contact your administrator/support.<br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp
-                <select><option>Course</option></select><br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="checkbox" id="visibility"/>
-                <label for="visibility">Include this course in the public course index</label>
-                <br/><br/>
-                Format:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <select><option>On-Campus</option></select>
-                <br/><br/>
-                Mastery Path:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input type="checkbox" id="masteryPaths"/>
-                <label for="masteryPaths">Enable individual learning paths for students based on assessment</label>
-                <br/><br/>
-                Description:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <textarea cols="60" rows="10"></textarea>
-                <br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <a href="#">more options</a>
-                <br/><br/>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <button>Update Course Details</button>
-            </td>
-        </tr>
-    </table>
+<div class="wd-flex-row-container">
+    <div class="wd-bg-color-black">
+        <ul class="wd-kanbas-navigation">
+            <li><a href="../../../Account/Profile/screen.html"><i class="fa fa-user" id = "kanbasNavigationuserIcon"></i>Account</a></li>
+            <li class="wd-active"><a href="../../../Dashboard/screen.html"><i class="fa fa-tachometer-alt" aria-hidden="true"></i> Dashboard</a></li>
+            <li><a href="../../Home/screen.html"><i class="fa fa-book" aria-hidden="true"></i>Courses</a></li>
+            <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+            <li><a href="#"><i class="fa fa-mail-bulk" aria-hidden="true"></i><br>Inbox</a></li>
+            <li><a href="#"><i class="fa fa-clock" aria-hidden="true"></i><br>History</a></li>
+            <li><a href="#"><i class="fa fa-video" aria-hidden="true"></i><br>Studio</a></li>
+            <li><a href="#"><i class="fa fa-arrow-alt-circle-right" aria-hidden="true"></i>Commons</a></li>
+            <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br>Help</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="wd-course-navigation">
+            <li><a href="../../Home/screen.html">Home</a></li>
+            <li><a href="../../Modules/index.html">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li><a href="../../Assignments/screen.html">Assignments</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="../../Grades/screen.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li class="wd-active"><a href="#">Settings</a></li>
+        </ul>
+    </div>
+    <div>
+        <div style="display: flex; gap: 20px;">
+            <a href="screen.html" style="text-decoration: none;color: black">Course Details</a>
+            <a href="#" style="text-decoration: none;color: red">Sections</a>
+            <a href="../NavigationTab/screen.html" style="text-decoration: none;color: red">Navigation</a>
+            <a href="#" style="text-decoration: none;color: red">Apps</a>
+            <a href="#" style="text-decoration: none;color: red">Feature Options</a>
+            <a href="#" style="text-decoration: none;color: red">Integrations</a>
+        </div>
+        <div style="margin-top: 30px; margin-left: 50px">
+            <h3>Course Details</h3>
+            Image:
+            <button class="btn btn-outline-secondary" style="margin-left: 60px">Choose Image</button>
+            <br/><br/>
+            Name:
+            <label style="margin-left: 70px">CS 4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</label>
+            <br/><br/>
+            Course Code:
+            <label style="margin-left: 20px">CS4550.12631.202410</label>
+            <br/><br/>
+            Blueprint Course:
+            <label style="margin-left: 10px">No</label>
+            <br/><br/>
+            Course Template:
+            <input type="checkbox" id="chkbox"/>
+            <label for="chkbox">Enable course as a Course Template</label><br/><br/>
+            Time Zone:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+            <select><option>Eastern Time(US & Canada)(-05:00/-04:00)</option></select>
+            <br/><br/>
+            SIS ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            CS4550.12631.202410
+            <br/><br/>
+            Subaccount:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">CS Undergrad</a>
+            <br/><br/>
+            Term:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            202410_1 Fall 2023 Semester Full Term
+            <br/><br/>
+            Participation:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select><option>Term</option></select>
+            <br/><br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCourse participation is limited to term start and end dates
+            <br/><br/>
+
+            <label for="start" class="form-label">Start</label>
+            <input type="date" class="form-control" id="start" value="2021-01-01" style="width: 200px;margin-left: 140px;">
+
+
+            <label for="end" class="form-label">End</label>
+            <input type="date" class="form-control" id="end" value="2021-01-01" style="width: 200px;margin-left: 140px">
+            <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" id="resStart"/>
+            <label for="resStart">Restrict students from viewing course before term start date</label><br/><br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" id="resEnd"/>
+            <label for="resEnd">Restrict students from viewing course after term end date</label><br/><br/>
+            Default due time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select><option>Account default (11:59pm)</option></select><br/><br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            This influences the user interface for setting due dates. It does not change the time due for any existing assignments.
+            <br/><br/>
+            Language:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select><option>Not set</option></select><br/><br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            This will override any user/syste, language preferences. This is only recommended for foreign language courses
+            <br/><br/>
+            File Storage:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10000 megabytes
+            <br/><br/>
+            Large Course:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" id="largeCourse"/>
+            <label for="largeCourse">Launch SpeedGrader Filtered by Student Group</label><br/><br/>
+            Grading Scheme:&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" id="gradingScheme"/>
+            <label for="gradingScheme">Enable course grading scheme</label><br/><br/>
+            License:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select><option>Private(Copyrighted)</option></select>
+            <br/><br/>
+            File Copyright:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" id="fileCopyright"/>
+            <label for="fileCopyright">Copyright and license information must be provided for files before
+                they are published
+            </label>
+            <br/><br/>
+            Visibility:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            If you need to make your course public please contact your administrator/support.<br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <select><option>Course</option></select><br/><br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" id="visibility"/>
+            <label for="visibility">Include this course in the public course index</label>
+            <br/><br/>
+            Format:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select><option>On-Campus</option></select>
+            <br/><br/>
+            Mastery Path:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="checkbox" id="masteryPaths"/>
+            <label for="masteryPaths">Enable individual learning paths for students based on assessment</label>
+            <br/><br/>
+            Description:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <textarea class="form-control" rows="10" style="width: 600px;margin-left: 140px"></textarea>
+            <br/><br/>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="#">more options</a>
+            <br/><br/>
+
+            <button class="btn btn-outline-secondary" style="margin-left: 550px">Update Course Details</button>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

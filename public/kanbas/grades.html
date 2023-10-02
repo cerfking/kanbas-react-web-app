@@ -3,33 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link rel="stylesheet" href="/public/index.css">
+  <link rel="stylesheet" href="/public/kanbas/KanbasNavigation/index.css">
+  <link rel="stylesheet" href="/public/kanbas/Courses/CourseNavigation/index.css">
+  <link rel="stylesheet" href="../vendor/fontawesome/css/all.css">
+  <link rel = "stylesheet" href="/vendor/bootstrap/bootstrap.css">
 </head>
 <body>
 <table>
   <tbody>
   <tr>
     <td style="vertical-align:top">
-      <ul>
-        <li><a href="#">Account</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
+      <div class="wd-bg-color-black">
+        <ul class="wd-kanbas-navigation">
+          <li><a href="/kanbas/Account/Profile/screen.html">Account</a></li>
+          <li><a href="/kanbas/Dashboard/screen.html"><i class="fa fa-tachometer-alt" aria-hidden="true"></i> Dashboard</a></li>
+          <li class="wd-active"><a href="/kanbas/Courses/Home/screen.html">Courses</a></li>
+          <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+          <li><a href="#">Inbox</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Studio</a></li>
+          <li><a href="#">Commons</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
     </td>
     <td style="vertical-align:top">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Modules</a></li>
+      <ul class="wd-course-navigation">
+        <li><a href="/kanbas/Courses/Home/screen.html">Home</a></li>
+        <li><a href="/kanbas/Courses/Modules/screen.html">Modules</a></li>
         <li><a href="#">Piazza</a></li>
         <li><a href="#">Zoom Meetings</a></li>
-        <li><a href="#">Assignments</a></li>
+        <li><a href="/kanbas/Courses/Assignments/screen.html">Assignments</a></li>
         <li><a href="#">Quizzes</a></li>
-        <li><a href="#">Grades</a></li>
+        <li class="wd-active"><a href="/kanbas/Courses/Grades/screen.html">Grades</a></li>
         <li><a href="#">People</a></li>
         <li><a href="#">Panopto Video</a></li>
         <li><a href="#">Discussions</a></li>
@@ -60,7 +67,7 @@
       <button type="button">Apply Filters</button>
       <br/>
       <br/>
-      <table border="1" width="100%">
+      <table border="1" width="100%" class="table">
         <thead>
         <tr>
           <th>Student Name</th>

@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<!--    <link rel="stylesheet" href="/public/vendor/fontawesome/css/all.css">-->
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="stylesheet" href="../../KanbasNavigation/index.css">
+    <link rel="stylesheet" href="../../Courses/CourseNavigation/index.css">
+    <link rel="stylesheet" href="../AccountNavigation/index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../../vendor/bootstrap/bootstrap.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li><a href="/kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="/kanbas/Dashboard/screen.html">Dashboard</a></li>
-                    <li><a href="/kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li><a href="#">Notifications</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">ePortfolios</a></li>
-                    <li><a href="#">Shared Content</a></li>
-                    <li><a href="#">The Hub</a></li>
-                    <li><a href="#">Quickly Course Tools</a></li>
-                    <li><a href="#">Global Announcements</a></li>
-                </ul>
-            </td>
-            <td valign="top">
-                Jose Annunziato's Profile
-                <h2>Jose Annunziato
-                    <a href="/kanbas/Account/Profile/ProfileEditor/screen.html"><button>Edit Profile</button></a></h2>
-                <br/>
-                <h3>Contact</h3>
-                No registered services, you can add some on the <a href="#">settings</a> page
-                <br/>
-                <h3>Biography</h3>
-                Faculty, Software Engineer, AI, Space, and renewables enthusiast
-                <br/>
-                <h3>Linkes</h3>
-                <a href="#">YouTube</a>
-            </td>
-        </tr>
-    </table>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
+                <li class="wd-active"><a href="screen.html"><i class="fa fa-user" id = "kanbasNavigationuserIcon"></i>Account</a></li>
+                <li><a href="../../Dashboard/screen.html"><i class="fa fa-tachometer-alt" aria-hidden="true"></i> Dashboard</a></li>
+                <li><a href="../../Courses/Home/screen.html"><i class="fa fa-book" aria-hidden="true"></i>Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+                <li><a href="#"><i class="fa fa-mail-bulk" aria-hidden="true"></i><br>Inbox</a></li>
+                <li><a href="#"><i class="fa fa-clock" aria-hidden="true"></i><br>History</a></li>
+                <li><a href="#"><i class="fa fa-video" aria-hidden="true"></i><br>Studio</a></li>
+                <li><a href="#"><i class="fa fa-arrow-alt-circle-right" aria-hidden="true"></i>Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br>Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="wd-account-navigation">
+                <li><a href="#">Notifications</a></li>
+                <li class="wd-active"><a href="#">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">ePortfolios</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Quickly Course Tools</a></li>
+                <li><a href="#">Global Announcements</a></li>
+            </ul>
+        </div>
+        <div>
+            <i class="fa fa-user" id = "userIcon"></i>
+            <div class="float-end">
+                <a href="ProfileEditor/screen.html">
+                    <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa fa-pencil-alt fa-flip-horizontal" id="pencilIcon"></i>
+                        Edit Profile
+                    </button>
+                </a>
+            </div>
+            <h2>Jose Annunziato</h2>
+            <br/>
+            <h3>Contact</h3>
+            No registered services, you can add some on the <a href="#">settings</a> page
+            <br/>
+            <h3>Biography</h3>
+            Faculty, Software Engineer, AI, Space, and renewables enthusiast
+            <br/>
+            <h3>Linkes</h3>
+            <a href="https://www.youtube.com/@WebDevTV/videos">YouTube</a>
+        </div>
+    </div>
+
 </body>
 </html>
