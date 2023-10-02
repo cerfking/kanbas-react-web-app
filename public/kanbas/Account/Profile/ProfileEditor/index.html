@@ -3,46 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../vendor/bootstrap/bootstrap.css">
+
 </head>
 <body>
-    <h1>Jose Annunziato</h1>
-    Name:*
-    <input value="Jose Annunziato"/>
+    <i class="fa fa-user" id="profileEditorIcon"></i>
+    <div class="float-end">
+        <a href="../screen.html">
+            <button type="button" class="btn btn-outline-secondary">
+                <i class="fa fa-pencil-alt fa-flip-horizontal"></i>Cancel Editing</button>
+        </a>
+    </div>
+
+
+
+    <br>
+    <div class="col-md-5 mb-2">
+        <label for="name" class="form-label">Name:*</label>
+        <input type="text" class="form-control" id="name" value="Jose Annunziato">
+    </div>
+
     Pronouns:
+    <br>
     <select>
         <option>None</option>
     </select>
-    <br/><br/>
-    Title:
-    <input/>
-    <h2>Contact</h2>
+    <br><br>
+    <div class="col-md-5 mb-2">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title">
+    </div>
+    Contact
+    <br>
     No registered  services,you can add some on the <a href="#">settings</a> page.
+    <br>
+    <br>
+
+    <div class="col-md-7 mb-2 d-block">
+        <label for="bio" class="form-label">Biography<br></label>
+        <textarea class="form-control" id="bio" rows="4">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+    </div>
     <br/>
-    <h2>Contact</h2>
-    No registered services,you can add some on the <a href="#">settings</a> page.
-    <br/>
-    <h2>Biography</h2>
-    Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-    <br/>
-    <textarea cols="60" rows="4">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
-    <br/>
-    <h2>Linkes</h2>
-    <ul>
-        <li><a href="#">YouTube Links to an external site.</a></li>
-    </ul>
-    <h2>&nbsp&nbsp&nbsp&nbsp&nbspTitle&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        &nbsp&nbsp&nbsp&nbspURL</h2>
-    <input value="YouTube"/>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <input value="https://www.youtube.com"/>
+    Links
+    <br>
+    <div class="row" >
+        <div class="col-md-5 mb-2">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" value="Youtube">
+        </div>
+        <div class="col-md-5 mb-2">
+            <label class="form-label">URL</label>
+            <input type="text" class="form-control" value="https://www.youtube.com">
+        </div>
+    </div>
+
     <a href="#">Remove</a>
     <br/>
-    <button>Add another link</button>
+    <button type="button" class="btn btn-outline-secondary">Add another link</button>
     <br/>
-    <button>Cancel</button>
-    <a href="/kanbas/Account/Profile/screen.html"><button>Save Profile</button></a>
+    <a href="../screen.html"><button type="button" class="btn btn-outline-secondary">Cancel</button></a>
+    <a href="../screen.html"><button type="button" class="btn btn-danger">Save Profile</button></a>
     <br/>
-    <button>Edit Profile</button>
-    <a href="/kanbas/Account/Profile/screen.html"><button>Cancel Editing</button></a>
+<!--    <button type="button" class="btn btn-outline-secondary">Edit Profile</button>-->
+
 </body>
 </html>

@@ -3,62 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="stylesheet" href="../../KanbasNavigation/index.css">
+    <link rel="stylesheet" href="../../../vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../CourseNavigation/index.css">
+    <link rel="stylesheet" href="../Home/index.css">
+    <script src="../../../vendor/bootstrap/bootstrap.bundle.js"></script>
+
 </head>
 <body>
-    <button>Import</button>
-    <select>
-        <option>Export</option>
-    </select>
-    <button>Configure</button>
-    <h2>Student Names</h2>
-    <input id="text-fields-studentName" placeholder="Search Students"/><br/>
-    <h2>Assignment Names</h2>
-    <input id="text-fields-assignmentName" placeholder="Search Assignments"/><br/>
-    <br/>
-    <button type="button">Apply Filters</button>
-    <br/>
-    <br/>
-    <table border="1" width="100%">
-        <thead>
-        <tr>
-            <th>Student Name</th>
-            <th>A1 SETUP<br/>Out of 100</th>
-            <th>A2 HTML<br/>Out of 100</th>
-            <th>A3 CSS<br/>Out of 100</th>
-            <th>A4 BOOTSTRAP<br/>Out of 100</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Alice Wonderland</td>
-            <td style="text-align: center">98</td>
-            <td style="text-align: center">89</td>
-            <td style="text-align: center">87</td>
-            <td style="text-align: center">90</td>
-        </tr>
-        <tr>
-            <td>Princes Leia</td>
-            <td style="text-align: center">98</td>
-            <td style="text-align: center">80</td>
-            <td style="text-align: center">87</td>
-            <td style="text-align: center">86</td>
-        </tr>
-        <tr>
-            <td>Luke Skywalker</td>
-            <td style="text-align: center"><input style="text-align: center" value="99"></td>
-            <td style="text-align: center">88</td>
-            <td style="text-align: center">97</td>
-            <td style="text-align: center">82</td>
-        </tr>
-        <tr>
-            <td>Han Solo</td>
-            <td style="text-align: center">83</td>
-            <td style="text-align: center">99</td>
-            <td style="text-align: center">94</td>
-            <td style="text-align: center">98</td>
-        </tr>
-        </tbody>
+<div style="display: flex; flex-direction: column">
+    <div class="float-end" style="display: flex; gap: 3px; margin-top: 80px; margin-bottom: 20px;margin-left: 370px">
+        <button class="btn btn-secondary">
+            <i class="fa fa-download"></i>
+            Import
+        </button>
 
-    </table>
+        <button class="btn btn-secondary">
+            <i class="fa fa-upload"></i>
+            Export
+        </button>
+        <button class="btn btn-secondary"><i class="fa fa-cog"></i></button>
+    </div>
+
+    <div class="float-start" style="display: flex; gap: 3px; margin-top: 20px">
+        <div>
+            <label for="studentNames" style="margin-top: 30px;width: 300px">Student Names</label>
+            <input type="text" class="form-control col-12" placeholder="Search Students" id="studentNames">
+        </div>
+
+        <div>
+            <label for="assignmentNames" style="margin-top: 30px;width: 300px">Assignment Names</label>
+            <input type="text" class="form-control col-12" placeholder="Search for Assignment" id="assignmentNames">
+        </div>
+    </div>
+    <button class="btn btn-outline-secondary" style="width: fit-content;margin-top: 10px"><i class="fa fa-filter"></i>Apply Filter </button>
+    <div class="table-responsive" style="margin-top: 20px;width: 600px">
+        <table class="table table-striped table-bordered align-middle">
+            <thead>
+            <tr class="align-middle">
+                <th>Student Name</th>
+                <th>A1 SETUP Out of 100</th>
+                <th>A2 HTML Out of 100</th>
+                <th>A3 CSS Out of 100</th>
+                <th>A4 BOOTSTRAP Out of 100</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Alice Wonderland</td>
+                <td style="text-align: center">98</td>
+                <td style="text-align: center">89</td>
+                <td style="text-align: center">87</td>
+                <td style="text-align: center">90</td>
+            </tr>
+            <tr>
+                <td>Princes Leia</td>
+                <td style="text-align: center">98</td>
+                <td style="text-align: center">80</td>
+                <td style="text-align: center">87</td>
+                <td style="text-align: center">86</td>
+            </tr>
+            <tr>
+                <td>Luke Skywalker</td>
+                <td style="text-align: center"><input style="text-align: center" value="99"></td>
+                <td style="text-align: center">88</td>
+                <td style="text-align: center">97</td>
+                <td style="text-align: center">82</td>
+            </tr>
+            <tr>
+                <td>Han Solo</td>
+                <td style="text-align: center">83</td>
+                <td style="text-align: center">99</td>
+                <td style="text-align: center">94</td>
+                <td style="text-align: center">98</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
 </body>
 </html>

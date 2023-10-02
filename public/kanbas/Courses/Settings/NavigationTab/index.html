@@ -3,33 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../index.css">
+    <link rel="stylesheet" href="../../../KanbasNavigation/index.css">
+    <link rel="stylesheet" href="../../../../vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../CourseNavigation/index.css">
+    <link rel="stylesheet" href="../../Home/index.css">
+    <link rel="stylesheet" href="../../Assignments/index.css">
 </head>
 <body>
-    Drag and drop items to reorder them in the course navigation.
-    <br/><br/>
-    <table border="1" width="30%">
-        <tr><td>Home</td></tr>
-        <tr><td>Modules</td></tr>
-        <tr><td>Piazza</td></tr>
-        <tr><td>Zoom Meetings</td></tr>
-        <tr><td>Assignments</td></tr>
-        <tr><td>Quizzes</td></tr>
-        <tr><td>Grades</td></tr>
-        <tr><td>People</td></tr>
-        <tr><td>Panopto Video</td></tr>
-    </table>
-    <br/><br/>
-    Drag items here to hide them from students.
-    <br/>
-    Disabling most pages will cause students who visit those pages to be redirected to the course home page.
-    <br/>
-    <table border="1" width="30%">
-        <tr><td>Chat<br/>Page disabled,won't appear in navigation</td></tr>
-        <tr><td>SCORM<br/>Page disabled,won't appear in navigation</td></tr>
-        <tr><td>Attendance<br/>Page disabled,won't appear in navigation</td></tr>
-        <tr><td>Barnes and Noble Bookstore<br/>Page disabled,won't appear in navigation</td></tr>
-        <tr><td>Digication<br/>Page disabled,won't appear in navigation</td></tr>
-        <tr><td>Top Hat<br/>Page disabled,won't appear in navigation</td></tr>
-    </table>
+<div>
+    <div style="display: flex; gap: 20px; margin-left: 50px">
+        <a href="../CourseDetails/screen.html" style="text-decoration: none;color: red">Course Details</a>
+        <a href="#" style="text-decoration: none;color: red">Sections</a>
+        <a href="screen.html" style="text-decoration: none;color: black">Navigation</a>
+        <a href="#" style="text-decoration: none;color: red">Apps</a>
+        <a href="#" style="text-decoration: none;color: red">Feature Options</a>
+        <a href="#" style="text-decoration: none;color: red">Integrations</a>
+    </div>
+    <div style="margin-top: 30px; margin-left: 50px">
+        Drag and drop items to reorder them in the course navigation.
+        <br/><br/>
+        <ul class="list-group">
+            <li class="list-group-item">Home</li>
+            <li class="list-group-item">Modules</li>
+            <li class="list-group-item">Piazza</li>
+            <li class="list-group-item">Zoom Meetings</li>
+            <li class="list-group-item">Assignments</li>
+            <li class="list-group-item">Quizzes</li>
+            <li class="list-group-item">Grades</li>
+            <li class="list-group-item">Grades</li>
+            <li class="list-group-item">People</li>
+            <li class="list-group-item">Panopto Video</li>
+        </ul>
+        <br/><br/>
+        Drag items here to hide them from students.
+        <br/>
+        Disabling most pages will cause students who visit those pages to be redirected to the course home page.
+        <br/>
+        <ul class="list-group">
+            <li class="list-group-item">Chat<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">SCORM<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Attendance<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Barnes and Noble Bookstore<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Digication<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Top Hat<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Syllabus<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Perusall<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Microsoft Teams Meetings<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">FACT Reporting and Photo Roster<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Progress Reports(Navigate)<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Microsoft Teams for Canvas<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">VHL Central<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Gradescope 1.3<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">Credentials<br/>Page disabled,won't appear in navigation</li>
+            <li class="list-group-item">iClicker<br/>Page disabled,won't appear in navigation</li>
+        </ul>
+        <button class="float-start btn btn-danger" style="margin-top: 10px">Save</button>
+
+    </div>
+</div>
 </body>
 </html>

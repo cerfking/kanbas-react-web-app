@@ -1,0 +1,16 @@
+#userIcon  {
+
+    font-size: 6em;
+    padding-left: 10px;
+    color: gray;
+}
+#pencilIcon {
+    font-size: 1.0em;
+
+}
+
+#editButton {
+    position: relative;
+    bottom: 60px;
+    left: 220px;
+}
