@@ -6,9 +6,10 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
-function Courses() {
+import NewAssignment from "./Assignments/newAssignment";
+function Courses({ courses }) {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div>
             <h1>Course {course.name}</h1>
@@ -29,7 +30,10 @@ function Courses() {
                         <Route
                             path="Assignments/:assignmentId"
                             element={<AssignmentEditor/>}
-                        />
+                        /> <Route
+                        path="Assignments/NewAssignment"
+                        element={<NewAssignment/>}
+                    />
                         <Route path="Grades" element={<Grades />} />
 
                     </Routes>

@@ -2,11 +2,33 @@ import { Link } from "react-router-dom";
 import db from "../Database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-function Dashboard() {
-    const courses = db.courses;
+import { React, useState } from "react";
+function Dashboard({ courses, course, setCourse, addNewCourse,
+                       deleteCourse, updateCourse }
+) {
+
+
     return (
         <div>
             <h1>Dashboard</h1>
+            <h5>Course</h5>
+            <input value={course.name} className="form-control"
+                   onChange={(e) => setCourse({ ...course, name: e.target.value }) }/>
+            <input value={course.number} className="form-control"
+                   onChange={(e) => setCourse({ ...course, number: e.target.value }) }/>
+            <input value={course.startDate} className="form-control" type="date"
+                   onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
+            <input value={course.endDate} className="form-control" type="date"
+                   onChange={(e) => setCourse({ ...course, endDate: e.target.value }) }/>
+
+            <button onClick={addNewCourse} >
+                Add
+            </button>
+            <button onClick={updateCourse} >
+                Update
+            </button>
+
+
             <div className="d-flex flex-wrap">
                 {courses.map((course) => (
                     <div key={course._id} style={{ marginRight: '30px' }}>
@@ -20,7 +42,24 @@ function Dashboard() {
                                         <h5 className="card-title">{course.number}</h5>
                                         <p className="card-text">202310_1 Fall 2023 Semester Full Term</p>
                                     </div>
+                                <button
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        deleteCourse(course._id);
+                                    }}>
+                                    Delete
+                                </button>
+                                <button
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        setCourse(course);
+                                    }}>
+                                    Edit
+                                </button>
+
                             </div>
+
+
                         </Link>
                     </div>
                 ))}

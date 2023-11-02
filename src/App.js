@@ -4,6 +4,7 @@ import Kanbas from "./Kanbas";
 import HelloWorld from "./Labs/a3/HelloWorld";
 import {HashRouter, Route, Routes} from "react-router-dom";
 import {Navigate} from "react-router-dom";
+import Assignment4 from "./Labs/a4";
 
 //import './App.css';
 
