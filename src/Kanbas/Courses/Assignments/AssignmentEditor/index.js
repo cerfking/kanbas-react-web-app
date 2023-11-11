@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
 import {useDispatch, useSelector} from "react-redux";
@@ -10,7 +10,9 @@ import {
 } from "../assignmentsReducer";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {updateModule} from "../../Modules/modulesReducer";
+import * as client from "../client"
+import {findModulesForCourse} from "../../Modules/client";
+import {setModules} from "../../Modules/modulesReducer";
 
 
 function AssignmentEditor() {
@@ -24,26 +26,35 @@ function AssignmentEditor() {
     const { courseId } = useParams();
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const handleSave = () => {
+    const handleSave = async () => {
+        const status = await client.updateAssignment(assignment);
         dispatch(updateAssignment(assignment));
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
+
     const handleDelete = () => {
         setShowDeleteDialog(true);
         // dispatch(deleteAssignment(assignment._id));
         // navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     }
     const handleConfirmDelete = () => {
-        dispatch(deleteAssignment(assignment._id));
+        client.deleteAssignment(assignment._id).then((status) => {
+            dispatch(deleteAssignment(assignment._id));
+        });
+       // dispatch(deleteAssignment(assignment._id));
         setShowDeleteDialog(false);
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
+
     const handleCancelDelete = () => {
         // Close the dialog
         setShowDeleteDialog(false);
     };
+    useEffect(() => {
+        dispatch(selectAssignment(thisAssignment));
+    }, [assignmentId]);
 
-    dispatch(selectAssignment(thisAssignment));
+
     const [showDeleteDialog, setShowDeleteDialog] = useState(false);
     return (
         <div>

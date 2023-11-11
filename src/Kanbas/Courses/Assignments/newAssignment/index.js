@@ -10,7 +10,9 @@ import {
 } from "../assignmentsReducer";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {setModule} from "../../Modules/modulesReducer";
+import {addModule, setModule} from "../../Modules/modulesReducer";
+import {createAssignment} from "../client";
+import {createModule} from "../../Modules/client";
 
 function NewAssignment() {
     const { assignmentId } = useParams();
@@ -21,9 +23,13 @@ function NewAssignment() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const handleSave = () => {
-        dispatch(addAssignment({ ...assignment, course: courseId }))
+        createAssignment(courseId, assignment).then((assignment) => {
+            dispatch(addAssignment(assignment));
+        });
+        //dispatch(addAssignment({ ...assignment, course: courseId }))
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
+
     return (
         <div>
             <h2>Assignment Name</h2>

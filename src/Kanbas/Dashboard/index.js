@@ -24,7 +24,10 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
             <button onClick={addNewCourse} >
                 Add
             </button>
-            <button onClick={updateCourse} >
+            <button onClick={(event) => {
+                event.preventDefault();
+                updateCourse(course);
+            }} >
                 Update
             </button>
 
@@ -45,7 +48,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                                 <button
                                     onClick={(event) => {
                                         event.preventDefault();
-                                        deleteCourse(course._id);
+                                        deleteCourse(course);
                                     }}>
                                     Delete
                                 </button>

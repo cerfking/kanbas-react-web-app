@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Link, useNavigate, useParams} from "react-router-dom";
 import db from "../../Database";
 import { useSelector, useDispatch } from "react-redux";
@@ -8,7 +8,13 @@ import {
     deleteAssignment,
     updateAssignment,
     selectAssignment,
+    setAssignments
 } from "./assignmentsReducer";
+import * as client from "./client";
+import {findModulesForCourse} from "../Modules/client";
+import {setModules} from "../Modules/modulesReducer";
+import {findAssignmentsForCourse} from "./client";
+
 function Assignments() {
     const { courseId } = useParams();
     //const assignments = db.assignments;
@@ -17,6 +23,12 @@ function Assignments() {
         (assignment) => assignment.course === courseId);
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    useEffect(() => {
+        findAssignmentsForCourse(courseId)
+            .then((assignments) =>
+                dispatch(setAssignments(assignments))
+            );
+    }, [courseId]);
     return (
         <div>
             <h2>Assignments for course {courseId}</h2>

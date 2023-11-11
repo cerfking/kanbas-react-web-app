@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -7,8 +7,10 @@ import {
     addModule,
     deleteModule,
     updateModule,
-    setModule,
+    setModule, setModules,
 } from "./modulesReducer";
+import {createModule, findModulesForCourse} from "./client";
+import * as client from "./client";
 
 
 function ModuleList() {
@@ -16,16 +18,40 @@ function ModuleList() {
     const modules = useSelector((state) => state.modulesReducer.modules);
     const module = useSelector((state) => state.modulesReducer.module);
     const dispatch = useDispatch();
+    const handleAddModule = () => {
+        createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+    };
+
+
+
+    useEffect(() => {
+        findModulesForCourse(courseId)
+            .then((modules) =>
+                dispatch(setModules(modules))
+            );
+    }, [courseId]);
+
 
 
     // const modules = db.modules;
     return (
         <ul className="list-group">
             <li className="list-group-item">
-                <button className={"btn btn-primary"} onClick={() => dispatch(updateModule(module))}>
+                <button className={"btn btn-primary"} onClick={handleUpdateModule}>
                     Update
                 </button>
-                <button className={"btn btn-success"}  onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+                <button className={"btn btn-success"}  onClick={handleAddModule}>Add</button>
 
 
                 <input className={"form-control"} value={module.name}
@@ -45,7 +71,7 @@ function ModuleList() {
                         <li key={index} className="list-group-item">
                             <button
                                 className="btn btn-danger"
-                                onClick={() => dispatch(deleteModule(module._id))}>
+                                onClick={() =>  handleDeleteModule(module._id)}>
                                 Delete
                             </button>
                             <button
