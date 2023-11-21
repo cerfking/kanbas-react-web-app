@@ -5,6 +5,7 @@ import HelloWorld from "./Labs/a3/HelloWorld";
 import {HashRouter, Route, Routes} from "react-router-dom";
 import {Navigate} from "react-router-dom";
 import Assignment4 from "./Labs/a4";
+import Project from "./Project";
 
 //import './App.css';
 
@@ -14,8 +15,9 @@ function App() {
       <HashRouter>
           <div>
               <Routes>
-                  <Route path="/" element={<Navigate to="/Labs"/>}/>
+                  <Route path="/" element={<Navigate to="Labs/a3"/>}/>
                   <Route path="/hello" element={<HelloWorld/>}/>
+                  <Route path="/project/*" element={<Project/>}/>
                   <Route path="/Labs/*" element={<Labs/>}/>
                   <Route path="/Kanbas/*" element={<Kanbas/>}/>
               </Routes>
